@@ -1,0 +1,18 @@
+<!-- Input a number and reverse that number -->
+
+<script>
+    var N  = prompt("Enter a number to reverse");
+    var userInput = N;
+    var reverseNumber = "";
+    while (N > 0) {
+        if (N / 10 != 0) {
+            remainder = N % 10;
+            quotient = Math.floor(N/10);
+            N = quotient;
+            reverseNumber += remainder.toString();
+        } else if (N/10 == 0) {
+            reverseNumber += quotient.toString();
+        } 
+    }
+    console.log("Reverse Number of " + userInput.toString() + " is: " + reverseNumber);
+</script>

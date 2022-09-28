@@ -1,0 +1,24 @@
+<!-- Input a number and check if it is prime or not -->
+
+<script>
+    var N = prompt("Enter a number to check if it is prime or not");
+    var primeNo = true;
+    for (i=1; i<=N; i++) {
+        
+        if ((i != 1) && (i != N)) {
+            if (N % i == 0) {
+                primeNo = false;
+                break;
+            }
+        }
+    }
+    if ((N == 1) || (N == 0)) {
+            console.log(N.toString() + " is neither prime nor composite number");
+    }        
+    else if (primeNo == true) {
+        console.log(N.toString() + " is a prime number");
+    }
+    else if (primeNo == false) {
+        console.log(N.toString() + " is not a prime number");
+    }
+</script>

@@ -1,0 +1,14 @@
+<!-- Input a number and display all prime factors of that number -->
+
+<script>
+    var N = prompt("Enter a number and find all prime factors of that number");
+
+    for(i=1; i<=N; i++) {
+        if (N % i == 0) {
+            quotient = Math.floor(N/i);
+            N = quotient;
+            console.log(i);
+        }
+}
+    
+</script>
