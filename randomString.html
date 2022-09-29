@@ -4,7 +4,7 @@
     var result = "";
 
     for (i=0; i<lengthOfPassword; i++) {
-        randomNumber = Math.floor(Math.random()*(lengthOfPassword-1));
+        randomNumber = Math.floor(Math.random()*(characters.length-1));
         result += characters.charAt(randomNumber);
     }
     console.log(result);
