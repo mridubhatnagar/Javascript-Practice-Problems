@@ -9,12 +9,12 @@
         if (N % i == 0) {
             quotient = Math.floor(N/i);
             if (quotient == 1) {
-                console.log(i);
+                // console.log(i);
                 unique_prime_factors.add(i);
                 break;
             }
             N = quotient;
-            console.log(i);
+            // console.log(i);
             unique_prime_factors.add(i);
             i = 2;
         }
