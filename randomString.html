@@ -1,0 +1,11 @@
+<script>
+    var lengthOfPassword = prompt("Enter length of randomly generated Password");
+    var characters="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    var result = "";
+
+    for (i=0; i<lengthOfPassword; i++) {
+        randomNumber = Math.floor(Math.random()*(lengthOfPassword-1));
+        result += characters.charAt(randomNumber);
+    }
+    console.log(result);
+</script>
