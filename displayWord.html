@@ -1,0 +1,26 @@
+<!-- Display words present  -->
+
+<script>
+    var inputString = "A Cat Ran After The Dog But The Dog Ran Faster";
+    inputString = inputString.toLowerCase();
+    var y = "";
+    var count = 0;
+    var displayWords = new Set();
+    
+    for (x=0; x<=inputString.length; x++) {
+        if (inputString[x] == " ") {
+            displayWords.add(y);
+            y="";
+        } 
+        else if (x == inputString.length) {
+            displayWords.add(y);
+        } else {
+            y += inputString[x];
+        }
+    }
+
+    for (word of displayWords) {
+        console.log(word);
+    }
+
+</script>
