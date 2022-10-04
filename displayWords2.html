@@ -1,0 +1,20 @@
+<!-- From a sentence display all the words that occur in the sentence ( during display word should be displayed only once. See if the result can be shown in sorted order of words ) -->
+<!-- Approach 2 -->
+
+<script>
+    var inputString = "A Cat Ran After The Dog But The Dog Ran Faster";
+    inputString = inputString.toLowerCase();
+    var inputArray = inputString.split(" ");
+
+    var displayWords = new Set();
+
+    for (x of inputArray) {
+        displayWords.add(x);
+    }
+
+    for (word of displayWords) {
+        console.log(word);
+    }
+    
+
+</script>
